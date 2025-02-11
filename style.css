@@ -64,6 +64,10 @@ a{
     max-width: 50px;
 }
 
+.social img{
+    height: 30px;
+}
+
 .home{
     margin-top: 130px;
     justify-content: center;
@@ -369,7 +373,7 @@ footer .links li{
     font-size: small;
 }
 /*-----The responsive part----*/
-@media (max-width: 480px) {
+@media (min-width: 460px) {
 
     .nav{
         background: purple;
@@ -417,6 +421,11 @@ footer .links li{
 
     .social img{
         height: 30px;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
     }
 
     .home h1{
