@@ -55,17 +55,29 @@ a{
 }
 
 .social{
+    display: flex;
     float: right;
-    margin-right: 10px;
+    
+}
+
+.social li{
+    display: block;
+   
 }
 
 .social a{
     font-size: 16px;
     max-width: 50px;
+    margin-left: 30rem;
+    align-items: center;
+    display: flex;
+
+
 }
 
 .social img{
     height: 30px;
+  
 }
 
 .home{
@@ -373,101 +385,119 @@ footer .links li{
     font-size: small;
 }
 /*-----The responsive part----*/
-@media (min-width: 460px) {
 
-    .nav{
-        background: purple;
-        text-align: center;
-        display: block;
-        font-size: 30px;
-        padding: 10px 0px 10px 0px;
+/*-----The responsive part----*/
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
         width: 100%;
     }
 
-    .navbar ul li a:hover{
-        color: gray;
-        font-size: 14px;
-        background: gold;
-        width: 100%;
-    
-    }
-
-    .navbar ul li{
-        margin: 0;
+    .navbar ul li {
         float: none;
-        width: 100%;
-        
+        margin: 1rem 0;
     }
 
-    .navbar ul li a{
-        width: 100%;
+    .nav {
+        display: block; /* Show the menu icon */
+        cursor: pointer;
+    }
+
+    .social {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .social a {
+        margin: 0 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .home .content h1 {
+        font-size: 24px; /* Adjust font size */
+        margin-top: 30px;
+    }
+
+    .home .content h2 {
+        font-size: 20px; /* Adjust font size */
+        margin-top: 20px;
+    }
+
+    .home .content p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    #courses .course-base {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #courses .course-box img {
+        width: 100%; /* Make images responsive */
+    }
+
+    .comment-section {
+        width: 90%; /* Make comment section responsive */
+    }
+
+    .container {
+        width: 90%; /* Make subscribe container responsive */
+    }
+
+    footer .links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Center the social links */
+    }
+
+    #copyright h1 {
+        margin-left: 0; /* Center copyright text */
         text-align: center;
-        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .navbar ul {
+        display: flex; /* Show menu on medium screens */
     }
 
-    .social{
-       
-        width: 100%;
-        float: left;
-        text-align: center;
-        border-top: 1px solid #fff ;
+    .navbar ul li {
+        margin: 0 1rem; /* Adjust spacing */
     }
 
-    .social ul li{
-        float: left;
-        max-width: 30px;
-        margin-left: 60px;
+    .home .content h1 {
+        font-size: 28px; /* Adjust font size */
     }
 
-    .social img{
-        height: 30px;
+    .home .content h2 {
+        font-size: 22px; /* Adjust font size */
     }
 
-    .content{
-        width: 100%;
-        display: flex;
+    .home .content p {
+        font-size: 18px; /* Adjust font size */
     }
 
-    .home h1{
-        float: left;
-        text-align: center;
-        background: gold;
-        margin-left: 80px;
-        margin-right: 80px;
-
+    #courses .course-base {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
     }
 
-    .home p{
-        float: left;
-        text-align: center;
-        background: gold;
-        margin-left: 120px;
-        margin-right: 80px;
-
+    footer .links {
+        margin-left: 10rem; /* Adjust margin for medium screens */
     }
+}
 
-    .course{
-        width: 100%;
-    }
-
-    main{
-        margin: 0.5em;
-        padding: 0.5em;
-    }
-    footer{
-        padding: 0.2em;
-    }
-
-
-
-    @media(min-width: 780px){
-
-        .navbar ul li{
-            display: block;
-
-        }
-
-
-    }
-    
+@media (min-width: 781px) {
+    /* Styles for larger screens can be added here if needed */
 }
