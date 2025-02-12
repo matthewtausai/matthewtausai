@@ -8,27 +8,39 @@ body{
 
 }
 
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;  
+}
+
 .navbar{
     width: 100%;
     overflow: auto;
-    background: brown;
+    background: grey;
     z-index: 999;
     position: fixed;
     margin: 0;
-
+    overflow: auto;
 }
 
 .navbar ul{
     padding: 0;
     margin: 0;
     list-style: none;
-    line-height: 70px;
+    display: flex;
+   
    
 }
 
+.navbar-container ul{
+    margin-left: 1rem;
+}
+
 .navbar ul li{
-    float: left;
-    margin-left: 2rem;
+    margin-right: 20px;
+    
 
 }
 
@@ -38,37 +50,40 @@ a{
     font-size: 14px;
     font-weight: bold;
     color:#fff;
-    width:120px;
+    width:110px;
     position: center;
     text-transform: uppercase;
 }
 
 .navbar ul li a:hover{
-    color: gray;
-    font-size: 18px;
-    background: gold;
+    color: yellow;
 
 }
 
 .nav{
     display: none;
+    font-size: larger;
 }
 
 .social{
     display: flex;
-    float: right;
-    
+    align-items: center;
 }
 
-.social li{
-    display: block;
-   
+.social ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.social ul li{
+    margin-right: 10px;
 }
 
 .social a{
     font-size: 16px;
     max-width: 50px;
-    margin-left: 30rem;
+    margin-left: 0;
     align-items: center;
     display: flex;
 
@@ -77,13 +92,12 @@ a{
 
 .social img{
     height: 30px;
-  
 }
 
 .home{
     margin-top: 130px;
     justify-content: center;
-    background:goldenrod;
+    background: linear-gradient(to top, #87CEEB, #FFFFFF);
     padding: 0;
     margin: 2px;
     background-position: center;
@@ -122,7 +136,7 @@ a{
 
 .home .content h1{
 
-    color: #fff;
+    color: black;
     font-weight: bolder;
     align-items: center;
     margin-top: 90px;
@@ -132,14 +146,14 @@ a{
 .home .content h2{
     margin-top: 50px;
 
-    color: #fff;
+    color: black;
     font-weight: bolder;
     align-items: center;
 
 }
 
 .home .content p{
-    color: #fff;
+    color: black;
     font-weight: bold;
     
 }
@@ -384,7 +398,6 @@ footer .links li{
     margin-left: 450px;
     font-size: small;
 }
-/*-----The responsive part----*/
 
 /*-----The responsive part----*/
 
@@ -407,10 +420,12 @@ footer .links li{
 
     .nav {
         display: block; /* Show the menu icon */
-        cursor: pointer;
+        cursor:pointer;
+        font-size: 2.5rem;
     }
 
     .social {
+        display:flex;
         flex-direction: column;
         margin-top: 10px;
     }
@@ -418,6 +433,8 @@ footer .links li{
     .social a {
         margin: 0 10px;
     }
+
+    
 
     .home {
         flex-direction: column;
@@ -457,14 +474,25 @@ footer .links li{
     }
 
     footer .links {
-        flex-direction: column;
+        
         align-items: center;
         margin-left: 0; /* Center the social links */
+        display: flex;
+       
+    }
+
+    footer .links img {
+        margin-left: 1.5rem;
+        height:25px;
     }
 
     #copyright h1 {
         margin-left: 0; /* Center copyright text */
         text-align: center;
+    }
+
+    footer{
+        height: 90%;
     }
 }
 
