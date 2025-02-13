@@ -350,34 +350,26 @@ text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 footer{
 
     height: 50vh;
-    background: gold;
-    
-    
+    background: gold; 
 }
-
 footer .content span{
     color: black;
     font-size: x-large;
     font-weight: 800;
 }
-
 footer .content p{
     color: #fff;
 }
-
 footer .links img{
     height: 40px;
 }
-
 footer .links{
     margin-top: 90px;
     display: flex;
     margin-left: 20rem;
-
 }
 
 footer .links li{
@@ -386,12 +378,11 @@ footer .links li{
 
 #copyright{
     display: flex;
-    background: gray;
+    background: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-items: center;
     align-content: center;
     padding: 30px;
-   
 }
 
 #copyright h1{
@@ -405,6 +396,7 @@ footer .links li{
     .navbar {
         flex-direction: column;
         align-items: center;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .navbar ul {
@@ -426,14 +418,114 @@ footer .links li{
 
     .social {
         display:flex;
-        flex-direction: column;
         margin-top: 10px;
-    }
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: center;
+
+        }
+        .social ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center; /* Add this _*/
+            justify-content: space-evenly;
+            width: 100%; /*_ Add this */
+
+            }
+
+        .social li {
+            margin-right: 10px;
+            }
 
     .social a {
         margin: 0 10px;
     }
 
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .navbar{
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+        margin: 0;
+        overflow: auto;
+    }
+    
+    .navbar ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        margin-bottom: 20px; /* Add some space between the links and social icons */
+   
+    }
+    
+    .navbar-container ul{
+        margin-left: 1rem;
+    }
+    
+    .navbar ul li{
+        margin-right: 20px;
+        
+    
+    }
+    
+    a{
+        display: block ;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        color:#fff;
+        width:110px;
+        position: center;
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li a:hover{
+        color: yellow;
+    
+    }
+    
+    .social{
+        display: flex;
+        align-items: center;
+    }
+    
+    .social ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .social ul li{
+        margin-right: 10px;
+    }
+    
+    .social a{
+        font-size: 16px;
+        max-width: 50px;
+        margin-left: 0;
+        align-items: center;
+        display: flex;
+    
+    
+    }
+    
+    .social img{
+        height: 30px;
+    }
     
 
     .home {
