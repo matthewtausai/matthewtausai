@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TausaiFashion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".nav").click(function(event){
+                event.preventDefault(); // Prevent default link behavior
+                $(".navbar ul").slideToggle("slow"); // Toggle the entire ul
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav" href="#">&#9776;</a> <!-- Hamburger menu -->
+
+        <div class="navbar-container">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">ABOUT</a></li>
+               <li><a href="#">GALLERY</a></li>
+            </ul>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/matthewtausai" target="_blank"><img src="img/facebook_109862.ico" alt="Facebook"></a></li>
+                    <li><a href="https://wa.me/+263774661934" target="_blank"><img src="img/whatsapp_108042.ico" alt="WhatsApp"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="img/youtube_108041.ico" alt="YouTube"></a></li>
+                    <li><a href="mailto:tausaimatthewmakopa21@mail.com" target="_blank"><img src="img/mail_gmail_22737 (1).ico" alt="Email"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <video autoplay loop muted playsinline class="background-clip">
+            <source src="img/fashion.mp4" width="100%" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>WELCOME TO JOY FASHIONS, THE HOME OF MODERN FASHION!!!</h1>
+            <p>We are the best supplier of modern fashion,<br/> just visit us today and<br/> grab your<br/> piece of cloth,<br/> mucheka baba</p>
+            <h2>WE DELIVER ORDERS FROM DUBAI, CHINA, UK, USA, AUSTRALIA. <br/><br/>ORIGINAL MUCHEKA!!!</h2>
+        </div>
+    </div>
+
+    <section id="courses">
+        <h1>Our recent Orders From China and DUBAI</h1>
+        <p>Hurry Up and Grab yours</p>
+        <div class="course-base">
+    
+            <div class="course-box">
+                <img src = "img/kids.jpg">
+                <div class="details">     
+                  <span>Updated 21/05/24</span>
+                  <h6>Black Suits From China</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+            <div class="course-box">
+                <img src = "img/cosmetic.jpg">
+                <div class="details">     
+                  <span>Updated 12/06/24</span>
+                  <h6>Women Cosmetics From UK</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+            <div class="course-box">
+                <img src = "img/gament2.jpg">
+                <div class="details">     
+                  <span>Updated 21/05/24</span>
+                  <h6>Garments from UK</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+            <div class="course-box">
+                <img src = "img/women.jpg">
+                <div class="details">     
+                  <span>Updated 21/05/24</span>
+                  <h6>Women Wear</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+            <div class="course-box">
+                <img src = "img/gament1.jpg">
+                <div class="details">     
+                  <span>Updated 21/05/24</span>
+                  <h6>Garments from Dubai</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+            <div class="course-box">
+                <img src = "img/belts.jpg">
+                <div class="details">     
+                  <span>Updated 21/05/24</span>
+                  <h6>Women Belts</h6>
+                </div>
+                <div class="cost">
+                    View
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </section>
+
+    <section id="comments1">
+        <div class="comment-section">
+           <h2>Leave Us a Comment</h2>
+           <form id="comment-form">
+              <input type="text" id="name" placeholder="Name Here">
+              <textarea id="comment" placeholder="Comment"></textarea>
+              <button id="submit-btn">SUBMIT</button>
+            </form>
+            <div id="comments-container"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="content">
+            <h1>GET IN TOUCH WITH US THROUGH OUR SOCIAL MEDIA LINKS!!!</h1>
+            <p><span>|</span>Call Us on: 0774661934 <span>|</span>0781556964 <span>|</span></p>
+
+        </div>
+
+        <div class="links">
+            <a href="http://facebook.com/matthewtausai" target="_blank"><li><img src ="img/facebook_109862.ico"></li></a>
+    
+            <a href="http://mailto:tausaimatthewmakopa21@mail.com" target="_blank"><li><img src ="img/mail_gmail_22737 (1).ico"></li></a>
+    
+            <a href="#" target="_blank"><li><img src ="img/instagram_108043.ico"></li></a>
+    
+            <a href="https://wa.me/+263774661934" target="_blank"><li><img src ="img/whatsapp_108042.ico"></li></a>
+    
+            <a href="#" target="_blank"><li><img src ="img/youtube_108041.ico"></li></a>
+    
+            <a href="#" target="_blank"><li><img src ="img/twitter_x_new_logo_x_rounded_icon_256078 (1).ico"></li></a>
+    
+    
+        </div>
+    </footer>
+    
+    <section id="copyright">
+        <h1>This website is developed by Tausai Matthew | 0774661934 | 0781556964</h1>
+    </section>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
